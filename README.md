@@ -1,3 +1,33 @@
+## ✨Project preview
+
+<h1 align=center>⚡Pokémon App</h1>
+
+</br>
+
+<h3 align="center">100% Responsive | Responsive For All Devices.</h3>
+
+<h3 align="center">
+  Build Using:
+  <img align="center"  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img align="center"  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
+</h3>
+
+</br>
+
+<div align=center><img src="./public/img/home.jpg"  width="90%"/></div>
+</br>
+<div align=center><img src="./public/img/details.jpg"  width="90%"/></div>
+</br>
+<div align=center><img src="./public/img/favorites.jpg"  width="90%"/></div>
+
+</br>
+
+<p align=center>🌐The online site: <a href="#" target="_blank">⚡Pokémon App</a></p>
+
+</br>
+
+##
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

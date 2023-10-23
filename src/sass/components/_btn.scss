@@ -1,0 +1,44 @@
+.btn {
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 2rem;
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: $color-primary;
+  color: $color-dark;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+  }
+}
+
+.button {
+  font: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+  color: $color-dark;
+  background-color: $color-primary;
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: scaleX(1.1);
+  }
+
+  &:hover:active {
+    transform: scaleX(0.9);
+  }
+
+  &--card-fav {
+    font-size: 1.6rem;
+  }
+}

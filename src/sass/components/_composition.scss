@@ -1,0 +1,50 @@
+.composition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $color-light;
+  width: Max(25vw, 20rem); //25 20rem
+  height: Max(25vw, 20rem); //25
+  border-radius: 50%;
+
+  position: relative;
+
+  &--margin-bottom {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 100%; //115
+    height: 100%; // 115
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 5rem; // 4
+    bottom: -2rem; // -2
+  }
+
+  &__caption {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    padding: 1.5rem;
+
+    left: 3vw;
+    top: 0;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light;
+  }
+
+  &--card-fav {
+    width: 15rem;
+    height: 15rem;
+
+    & > * {
+      left: 3rem; // 4
+    }
+  }
+}

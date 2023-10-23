@@ -1,0 +1,45 @@
+.heart {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  z-index: 100;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.1) translateY(-0.4rem);
+  }
+  &:active {
+    transform: scale(0.9) translateY(0rem);
+  }
+
+  @include respond(tab-portrait) {
+    right: 20%;
+  }
+
+  @include respond(phone) {
+    right: 10%;
+  }
+
+  @include respond(smallPhone) {
+    right: 2rem;
+  }
+
+  &__icon {
+    font-size: 3.5rem;
+    color: $color-primary;
+  }
+
+  &--card-fav {
+    top: 1.3rem;
+    right: 1.3rem;
+
+    & > * {
+      font-size: 2.5rem;
+    }
+  }
+}

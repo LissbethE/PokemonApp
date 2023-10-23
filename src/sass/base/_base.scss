@@ -1,0 +1,83 @@
+html {
+  font-size: 62.5%;
+
+  ///////////////////////////////////
+  // if width <= 900px
+  @include respond(tab-portrait) {
+    font-size: 56.25%; // 9px
+  }
+
+  // width <= 600
+  @include respond(phone) {
+    font-size: 50%; // 8px
+  }
+
+  // if width <= 400px
+  @include respond(smallPhone) {
+    font-size: 43.75%; // 7px
+  }
+
+  // width >= 1800px
+  @include respond(big-desktop) {
+    font-size: 100%; // 16px
+  }
+
+  // width >= 2000px
+  @include respond(big-desktop-2) {
+    font-size: 125%; // 20px
+  }
+
+  ///////////////////////////////////
+  /* Scroll Smoothly */
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  background-color: $color-dark;
+  position: relative;
+
+  /*
+  &::before {
+    content: "";
+    width: 70%;
+    height: 140%;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    top: -20%;
+    left: -20%;
+    z-index: -1;
+    position: fixed;
+  }*/
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+::selection {
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}

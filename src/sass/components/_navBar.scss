@@ -1,0 +1,13 @@
+.navBar {
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-portrait) {
+    //  margin-bottom: 1.5rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 1rem;
+  }
+}

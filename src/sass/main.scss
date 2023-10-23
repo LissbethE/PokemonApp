@@ -1,0 +1,17 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/logo";
+@import "components/search";
+@import "components/navBar";
+@import "components/btn";
+@import "components/container";
+@import "components/heart";
+@import "components/pokeList";
+@import "components/composition";
+@import "components/pokemon";
+@import "components/pokemonDetails";
+@import "components/favorites";

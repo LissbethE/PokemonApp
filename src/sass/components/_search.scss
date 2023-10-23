@@ -1,0 +1,22 @@
+.search {
+  width: 100%;
+  font: inherit;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+  border: 1px solid transparent;
+  padding: 0.7rem 1rem;
+
+  background-color: $color-dark;
+  color: $color-light;
+  outline: none;
+  transition: all 0.3s linear;
+
+  &::placeholder {
+    color: #a09f9f;
+  }
+
+  &:focus {
+    border: 1px solid $color-light;
+  }
+}

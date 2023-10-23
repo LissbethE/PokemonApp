@@ -1,0 +1,40 @@
+.favorites {
+  text-align: center;
+  padding-top: 4rem;
+
+  &__list {
+    padding: 4rem 1rem 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__item {
+    background-color: $color-secondary;
+
+    display: block;
+    padding: 4rem 6rem 4rem 6rem;
+    border-radius: 1rem;
+    position: relative;
+
+    & > h3 {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    & > .paragraph:first-child {
+      padding-right: 1rem;
+      border-right: 0.1rem solid $color-light;
+    }
+  }
+}

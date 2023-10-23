@@ -1,0 +1,109 @@
+.pokemonDetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+
+  &__span {
+    margin-right: 1rem;
+    font-weight: 700;
+  }
+
+  &__type {
+    align-self: center;
+
+    & > span {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    @include respond(smallPhone) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    & > P {
+      padding: 0.5rem 3rem;
+    }
+
+    & > P:not(:last-child) {
+      border-right: 1px solid $color-light;
+
+      @include respond(smallPhone) {
+        border-right: none;
+      }
+    }
+  }
+
+  &__box {
+    align-self: center;
+    width: 100%;
+    background-color: $color-secondary;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+
+    position: relative;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      row-gap: 4rem;
+    }
+
+    &::after {
+      content: "";
+      height: 90%;
+      width: 0.4rem;
+      border-radius: 10rem;
+      background-color: $color-dark;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include respond(phone) {
+        height: 0.4rem;
+        width: 90%;
+        top: 40%;
+        transform: translate(-50%, -60%);
+      }
+    }
+  }
+
+  &__abilities h3,
+  &__stats h3 {
+    margin-bottom: 2rem;
+    color: $color-primary;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &__stats-box p:not(:last-child),
+  &__abilities-box p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__stats-box,
+  &__abilities-box {
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}

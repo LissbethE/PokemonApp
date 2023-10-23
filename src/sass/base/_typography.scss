@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Pacifico&display=swap");
+
+body {
+  font-family: $font-sans-serif;
+  font-size: $font-size-default;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: $color-light;
+
+  @include respond(smallPhone) {
+    line-height: 1.1;
+  }
+}
+
+.heading-1 {
+  font-family: $font-pacifico;
+  font-size: Max(4.5vw, 4.5rem); // 4.5
+  font-weight: 800;
+
+  line-height: 1.1;
+  text-align: center;
+
+  &--card-fav {
+    font-size: Max(4vw, 3rem);
+    line-height: 1.7;
+  }
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-size: 1.6rem;
+
+  &--code {
+    font-size: 1.7rem;
+    color: $color-dark;
+    font-weight: 600;
+  }
+}
