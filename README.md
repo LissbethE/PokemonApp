@@ -18,7 +18,7 @@
 </br>
 <div align=center><img src="./public/img/details.jpg"  width="90%"/></div>
 </br>
-<div align=center><img src="./public/img/favorites.jpg"  width="90%"/></div>
+<div align=center><img src="./public/img/favorites.png"  width="90%"/></div>
 
 </br>
 
